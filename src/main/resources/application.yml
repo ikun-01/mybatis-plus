@@ -1,0 +1,19 @@
+server:
+  port: 4444
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis_plus
+    username: root
+    password: 131421
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      #配置逻辑删除
+      logic-delete-value: 1
+      logic-not-delete-value: 0
